@@ -1,6 +1,7 @@
 import navStyle from "../css/Nav.module.css";
 import { Link ,NavLink } from 'react-router-dom';
 
+
 function CommunityNav() {
   return (
     <>
