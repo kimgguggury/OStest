@@ -15,7 +15,7 @@
 	position: absolute;
 	top: 50%;  
   left: 50%;
-  transform: translate(-50%, -50%); // 중앙으로 이동 시키기 위해서 움직이게 함
+  transform: translate(-50%, -50%);
 }
 /* 로그인 폼의 제목 스타일 */
 .login >fieldset> h1 {

@@ -1,3 +1,6 @@
+import styles from "../css/Login.module.css";
+import { useState } from "react";
+import { Link } from "react-router-dom";
 
 function Login() {
 	const [id, setId] = useState(null);
@@ -39,3 +42,5 @@ function Login() {
 		</div>
 	)
 }
+
+export default Login
