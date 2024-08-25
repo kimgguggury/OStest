@@ -8,8 +8,8 @@ function CommunityNav() {
       <nav className={navStyle.nav}>
         <ul className={navStyle.nav_wrapper}>
           <li>
-            <NavLink className={navStyle.active}>&#9829;</NavLink>
-            <NavLink className={navStyle.active}>홈</NavLink>
+            <NavLink className={navStyle.active} to="/community">&#9829;</NavLink>
+            <NavLink className={navStyle.active} to="/community">홈</NavLink>
           </li>
           <li>
             <NavLink className={navStyle.active}>&#9829;</NavLink>

@@ -5,17 +5,11 @@
 	padding : 0;
 	box-sizing: border-box;
 }
+/* 페이지 배경 색상 설정 */
 body {
   background-color: #F5F6F3;
 }
-/* .container {
-  width: 400px;
-  height: 450px;
-  position:absolute; 
-  top: 50%;
-  left: 50%;
-  transform:translate(-50%, -50%);
-} */
+/* 회원가입 폼 컨테이너 설정 */
 .container {
   width: 400px;
   height: 520px;
@@ -25,24 +19,29 @@ body {
   transform:translate(-50%, -50%);
   text-align:center;  
 }
+/* 필드셋의 스타일 설정 */
 .container > fieldset {
   width: 400px;
   height:420px;
   background-color: white;
 } 
+/* 회원가입 폼의 제목 스타일 */
 .container > fieldset > h1 {
   font-family: "Nanum Brush Script", cursive;
   margin-top:20px;
 }
+/* 마지막 필드셋의 스타일 설정 (버튼 영역) */
 .container > fieldset:last-child {
   margin-top:20px;
   width:400px;
   height: 50px;
   line-height: 50px;
 }
+/* 입력 필드 리스트 스타일 */
 .container > fieldset > ul {
   list-style-type: none;
 }
+/* 리스트 아이템 스타일 */
 .container >  fieldset > ul > li {
   margin: 5px 0px;
 }
@@ -52,11 +51,12 @@ body {
   padding: 5px;
   margin:10px 0px;
 }
+/* 비밀번호 오류 메시지 스타일 */
 .passwordError {
   color: red;
   font-size: 13px;
-  margin-top: -10px; /* 메시지가 input 태그에 더 가까워지도록 조정 */
-  display: block; /* 메시지를 블록 요소로 설정해서 줄바꿈 적용 */
+  margin-top: -10px; 
+  display: block; 
 }
 .container >  fieldset > button {
   width: 300px;
@@ -65,9 +65,11 @@ body {
   background-color:#DBE7C8;
   margin-top : 8px;
 } 
+/* 마지막 입력 필드의 스타일 (짧은 필드) */
 .container >  fieldset > ul > li:last-child > input {
   width: 100px;
 }
+/* 링크 스타일 (텍스트 색상과 장식 설정) */
 .container >  fieldset > p > a {
   text-decoration: none;
   color:green;

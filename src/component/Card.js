@@ -2,7 +2,7 @@ import CardCss from "../css/Card.module.css";
 import data from "../data.js"
 function Card(props) {
   return(
-    <div className={CardCss.item}>
+    <div className={CardCss.item} onClick = {() => {props.handleClick();}}>
       <div className={CardCss.header}>
         <div className={CardCss.profile} />
         <div className={CardCss.name}> {props.product.name}</div>

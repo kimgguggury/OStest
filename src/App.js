@@ -2,18 +2,24 @@ import styles from "./Login.module.css";
 import signupCss from "./signup.module.css";
 import HomeCss from "./Home.module.css";
 import {useState, useEffect} from 'react';
-import { Routes,Route,Link } from 'react-router-dom';
+import { Routes,Route,Link, useNavigate } from 'react-router-dom';
 import Community from "./pages/Community";
+import Detail from "./pages/Detail"
+import data from "./data"
+
 
 function App() {
- 
+  const [products,setProducts] = useState(data);
   return (
     <div> 
       <Routes>
         <Route path="/" element ={<Login />} />
         <Route path="/signup" element = {<Signup/>} />
         <Route path="/home" element = {<Home />} />
-        <Route path="/community" element= {<Community />} />
+        <Route path="/community" element= {<Community products = {products}/>} />
+        <Route path="/detail/:id" element={<Detail  products = {products} />} />
+      
+        
       </Routes>     
     </div>
   );
@@ -115,6 +121,7 @@ function Signup() {
 }
 
 function Home() {
+  let navigate = useNavigate();
   return (
     <div className={HomeCss.container}>
       <div className={HomeCss.profile}>
@@ -126,7 +133,7 @@ function Home() {
         <div className={HomeCss.box}><h1>CCTV</h1></div>
         <div className={HomeCss.box}><h1>온도/습도/토양</h1></div>
         <div className={HomeCss.box}><h1>건강리포트</h1></div>
-        <div className={HomeCss.box}><h1>게시판</h1></div>
+        <div className={HomeCss.box} onClick={()=>{ navigate('/community') }}><h1>게시판</h1></div>
       </div>
     </div>
   )
