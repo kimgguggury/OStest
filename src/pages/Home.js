@@ -4,7 +4,7 @@ import HomeCss from "../css/Home.module.css";
 function Home() {
   let navigate = useNavigate();
   return (
-    <div style={{display:"flex",justifyContent:"center",alignContent:"center"}}>
+    <div style={{display:"flex",justifyContent:"center",alignItems:"center",height:"100vh"}}>
       <div className={HomeCss.container}>
         <div className={HomeCss.profile}>
           <div className= {HomeCss.photo} />
