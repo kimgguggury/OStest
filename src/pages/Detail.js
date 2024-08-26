@@ -1,9 +1,15 @@
 import { useParams } from "react-router-dom";
 import Nav from '../component/CommunityNav';
 import DetailCss from '../css/Detail.module.css';
+import { useState } from "react";
 
 function Detail(props) {
   let {id} = useParams();
+  const [comment,setComment] = useState(null);
+  const handleComment = function (e) {
+    setComment(e.target.value);
+    console.log(comment)
+  }
   return(
     <>
       <Nav />
@@ -29,8 +35,18 @@ function Detail(props) {
               </div>
             </div>
           </div>
+          <form>
+            <div className={DetailCss.inputBox}>
+              <input className ={DetailCss.detail_comment}  onChange={handleComment} value={comment}/>
+               <span className={comment?  DetailCss.floating :DetailCss.empytSpan  }>
+                댓글 입력
+              </span>
+            </div>
+          </form>
+          <p style={{margin:"50px 0 0 0"}}>댓글</p>
+          <hr style={{margin:"10px 0 0 0"}} />
         </div>
-
+        
       </div>
       
     </>

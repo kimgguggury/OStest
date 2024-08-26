@@ -73,3 +73,40 @@
 .detail_info > p {
   font-size: 20px;
 }
+.inputBox{
+  position: relative;
+}
+.detail_comment{
+  padding:10px 0 0 5px;
+  margin:50px 0 0 0;
+  width: 1000px;
+  height: 60px;
+  font-size:20px;
+  background-color:#E2E3D8;
+    
+}
+.empytSpan {
+  position: absolute;
+  top:55px;
+  left:5px;
+  font-size:30px;
+  color: gray;
+  transition:1s;
+} 
+.detail_comment:focus ~ span,
+.floating {
+  position: absolute;
+  top:50px;
+  left:5px;
+  font-size:13px;
+  color: gray;
+  transition-duration: 1s;
+}
+/* .floating{
+  position: absolute;
+  top:50px;
+  left:5px;
+  font-size:13px;
+  color: gray;
+  transition-duration: 1s;
+} */

@@ -16,8 +16,8 @@ function CommunityNav() {
             <NavLink className={navStyle.active}>내 게시글</NavLink>
           </li>
           <li>
-            <NavLink className={navStyle.active}>&#9829;</NavLink>
-            <NavLink className={navStyle.active}>게시글 등록</NavLink>
+            <NavLink className={navStyle.active} to="/create">&#9829;</NavLink>
+            <NavLink className={navStyle.active} to="/create">게시글 등록</NavLink>
           </li>
           <li>
             <NavLink className={navStyle.active}>&#9829;</NavLink>
